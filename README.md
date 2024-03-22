@@ -25,7 +25,7 @@ II. If you are not working on linux, then also install sqlite3 package (comes by
 `sh make_sqlitedb.sh`
 `Rscript trySpecies.R`
 
-**Execution to build a duckdb database for Ontop and build the knowledge graph`
+**Execution to build a duckdb database for Ontop and build the knowledge graph`**
 `duckdb Ontop_input.db -c "IMPORT DATABASE 'data/Ontop_input_db'"`
 `#Set the path in data/Ontop_input_db/duckdb.properties`
 `sh run_ontop.sh`
