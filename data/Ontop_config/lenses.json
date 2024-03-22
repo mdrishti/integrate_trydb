@@ -1,0 +1,60 @@
+{
+    "relations": [
+        {
+            "name": ["lenses", "try_tax"],
+            "join": {
+                "relations": [
+                    ["trydbAll"],
+                    ["taxonomy"]
+                ],
+                "columnPrefixes": [
+                    "tr_",
+                    "tax_"
+                ]
+            },
+            "columns": {
+                "added": [],
+                "hidden": [
+			"tr_LastName", 
+			"tr_FirstName", 
+			"tr_OrigUncertaintyStr", 
+			"tr_UncertaintyName", 
+			"tr_RelUncertaintyPercent", 
+			"tr_OrigObsDataID", 
+			"tr_ErrorRisk", 
+			"tr_Comment", 
+			"tr_StdValueStr",
+			"tax_SNo", 
+			"tax_NameUsedForFuzzyMatching",
+			"tax_MatchedName",
+			"tax_RecommendedScientificName", 
+			"tax_DiffGen", 
+			"tax_DiffSpec", 
+			"tax_SelectReason", 
+			"tax_AlternativeName"
+                ]
+            },
+            "filterExpression": "tr_AccSpeciesName = tax_TRY_AccSpeciesName",
+            "type": "JoinLens"
+        },
+	{
+		"name": ["lenses", "enpkg"],
+		"join": {
+                	"relations": [
+	        	        ["lenses", "try_tax"],
+                		["enpkg"]
+        		],
+	                "columnPrefixes": [
+        	            	"ltt_",
+        	        	"e_"
+        	        ]
+        	},
+	        "columns": {
+                	"added": [],
+	                "hidden": []
+		},
+        	"filterExpression": "ltt_tax_wikidata_id = e_wd_taxon_id",
+            	"type": "JoinLens"
+         }
+     ]
+}

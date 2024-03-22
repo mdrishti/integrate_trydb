@@ -1,0 +1,233 @@
+@prefix : <http://example.org/trydb_kg/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+:AccSpeciesID rdf:type owl:Class.
+:wd_id rdf:type owl:Class.
+
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/taxonomy#AlternativeName
+:AlternativeName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#BackboneDatabase
+:BackboneDatabase rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#DiffGen
+:DiffGen rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#DiffSpec
+:DiffSpec rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#Family
+:Family rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#Genus
+:Genus rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#MatchedName
+:MatchedName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#NameUsedForFuzzyMatching
+:NameUsedForFuzzyMatching rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#RecommendedScientificName
+:RecommendedScientificName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#Reference
+:Reference rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#SNo
+:SNo rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#SelectReason
+:SelectReason rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#TRY_AccSpeciesName
+:TRY_AccSpeciesName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#TRY_AccSpeciesNameScientific
+:TRY_AccSpeciesNameScientific rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#TRY_SpeciesID
+:TRY_SpeciesID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#TRY_SpeciesName
+:TRY_SpeciesName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#gbif_id
+:gbif_id rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#ncbi_id
+:ncbi_id rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#ott_id
+:ott_id rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#parent_id
+:parent_id rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/taxonomy#rank_id
+:rank_id rdf:type owl:DatatypeProperty .
+
+
+
+###  http://example.org/trydbAll#AccSpeciesName
+:AccSpeciesName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#Comment
+:Comment rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#DataID
+:DataID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#DataName
+:DataName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#Dataset
+:Dataset rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#DatasetID
+:DatasetID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#ErrorRisk
+:ErrorRisk rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#FirstName
+:FirstName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#LastName
+:LastName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#ObsDataID
+:ObsDataID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#ObservationID
+:ObservationID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#OrigObsDataID
+:OrigObsDataID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#OrigUncertaintyStr
+:OrigUncertaintyStr rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#OrigUnitStr
+:OrigUnitStr rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#OrigValueStr
+:OrigValueStr rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#OriglName
+:OriglName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#Reference
+:Reference rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#RelUncertaintyPercent
+:RelUncertaintyPercent rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#Replicates
+:Replicates rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#SpeciesName
+:SpeciesName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#StdValue
+:StdValue rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#StdValueStr
+:StdValueStr rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#TraitName
+:TraitName rdf:type owl:DatatypeProperty .
+
+###  http://example.org/trydbAll#TraitID
+:TraitID rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#UncertaintyName
+:UncertaintyName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#UnitName
+:UnitName rdf:type owl:DatatypeProperty .
+
+
+###  http://example.org/trydbAll#ValueKindName
+:ValueKindName rdf:type owl:DatatypeProperty .
+
+
+### Added for the lenses (join between taxonomy and trydbAll)
+
+:hasOttID rdf:type owl:DatatypeProperty .
+:hasNcbiID rdf:type owl:DatatypeProperty .
+:hasGbifID rdf:type owl:DatatypeProperty .
+:hasWdID rdf:type owl:DatatypeProperty .
+
+
+### the following has been manually added for the enpkg schema
+
+:rawMaterial rdf:type owl:DatatypeProperty .
+:submittedTaxon rdf:type owl:DatatypeProperty .
+:wd_taxon_id rdf:type owl:DatatypeProperty .
+:organ rdf:type owl:DatatypeProperty .
+:broad_organ rdf:type owl:DatatypeProperty .
+:tissue rdf:type owl:DatatypeProperty .
+:subsystem rdf:type owl:DatatypeProperty .
+
+
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
